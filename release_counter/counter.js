@@ -9,7 +9,7 @@ console.log(args[0])
 
 var totalEver = 0;
 rimraf('./releases', function() {
-  Git.Clone("https://github.com/AdoptOpenJDK/" + args[0] + "-releases.git", "./releases")
+  Git.Clone("https://github.com/AdoptOpenJDK/" + args[0] + "-nightly.git", "./releases")
     .then(function(run) {
       var release = require('./releases/releases.json');
 

@@ -27,6 +27,13 @@
 #
 ###################################################################
 
+
+#export PATH=/usr/bin:$PATH
+echo SXAEC : `which java` `which javac`
+echo SXAEC : echo $JAVA_HOME
+echo SXAEC : $PATH
+set | egrep -i 'java|openjdk'
+export JAVA_HOME=/usr/lib/jvm/jdk8u282-b08
 # Our timestamps must fit this particular format: YYYY-DD-MM-hh-mm, e.g. 2021-07-30-16-11
 timestampRegex="[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}-[[:digit:]]{2}-[[:digit:]]{2}"
 

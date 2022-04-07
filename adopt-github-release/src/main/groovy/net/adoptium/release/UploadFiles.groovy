@@ -86,7 +86,12 @@ class UploadAdoptReleaseFiles {
                     }
 
             println("Uploading ${file.name}")
-            release.uploadAsset(file, Files.probeContentType(file.toPath()))
+            println(Files.probeContentType(file.toPath()))
+            try {
+              release.uploadAsset(file, Files.probeContentType(file.toPath()))
+            } catch ( Exception e ) {
+              println(e)
+            }
         }
     }
 

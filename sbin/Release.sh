@@ -41,7 +41,7 @@ timestampRegex="[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}-[[:digit:]]{2}-[[:d
 #      OpenJDK                 -debugimage aarch64_       linux_         hotspot_         2023-02-16-12-32                .tar.gz
 #
 #             (version     )  (type                                                                                           ) (arch           ) (os             ) (variant         ) (timestamp     or version      )  (extension          )
-regex="OpenJDK([[:digit:]]*)U?(-jre|-jdk|-debugimage|-static-libs-glibc|-static-libs|-static-libs-musl|-testimage|-jdk-sources)_([[:alnum:]\-]+_)?([[:alnum:]\-]+_)?([[:alnum:]\-_]+_)?([[:digit:]\-]+|[[:alnum:]\._]+)\.(tar\.gz|zip|pkg|msi)";
+regex="OpenJDK([[:digit:]]*)U?(-jre|-jdk|-debugimage|-static-libs-glibc|-static-libs|-static-libs-musl|-testimage|-jdk-sources)_([[:alnum:]\-]+_)?([[:alnum:]\-]+_)?([[:alnum:]\-_]+_)(?([[:digit:]\-\.\+]+|[[:alnum:]\._]+)\.(tar\.gz|zip|pkg|msi)";
 
 regexArchivesOnly="${regex}$";
 
